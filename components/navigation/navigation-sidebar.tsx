@@ -8,6 +8,8 @@ import { NavigationItem } from "./navigation-item";
 import { ModeToggle } from "../mode-toggle";
 import { UserButton } from "@clerk/nextjs";
 
+export const revalidate = 1;
+
 export const NavigationSidebar = async () => {
   const profile = await currentProfile();
 
